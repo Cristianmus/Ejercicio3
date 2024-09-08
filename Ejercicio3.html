@@ -8,20 +8,23 @@
 </head>
 <body>
     <div class="valores">
-    <input type="number" name="Valor1" class="Valor1">
-    <input type="number" name="Valor1" class="Valor1">
+    <input type="number" id="valor1" class="Valor1">
+    <input type="number" id="valor2" class="Valor2">
+    
     </div>
     <!-- BOTONES -->
     <div>
         <div>
-        <button class="div">SUMA</button>
-        <button class="div">RESTA</button>
+        <button onclick="calcular('sumar')">SUMA</button>
+        <button onclick="calcular('restar')">RESTA</button>
         </div>
         <br>
         <div>
-        <button class="div">MULTIPLICACION</button>
-        <button class="div">DIVISION</button>
+        <button onclick="calcular('multiplicar')">MULTIPLICACION</button>
+        <button onclick="calcular('dividir')">DIVISION</button>
         </div>
+        <input type="text" id="resultado" class="resultado" readonly>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
